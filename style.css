@@ -126,7 +126,7 @@ html {
 body {
 	background: #f5efe0;
 	box-sizing: border-box;
-	color: #000;
+	color: var(--wp--custom--colors--black);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.8rem;
 	letter-spacing: -0.015em;
@@ -752,7 +752,7 @@ button,
 input,
 textarea {
 	border-color: #dcd7ca;
-	color: #000;
+	color: var(--wp--custom--colors--black);
 }
 
 code,
@@ -1657,7 +1657,7 @@ ul.primary-menu {
 /* SUB MENU */
 
 .primary-menu ul {
-	background: #000;
+	background: var(--wp--custom--colors--black);
 	border-radius: 0.4rem;
 	color: #fff;
 	font-size: 1.7rem;
@@ -1697,7 +1697,7 @@ ul.primary-menu {
 
 .primary-menu ul::after {
 	border: 0.8rem solid transparent;
-	border-bottom-color: #000;
+	border-bottom-color: var(--wp--custom--colors--black);
 	right: 1.8rem;
 }
 
@@ -1746,7 +1746,7 @@ ul.primary-menu {
 	border-bottom-color: transparent;
 
 	/*rtl:ignore*/
-	border-left-color: #000;
+	border-left-color: var(--wp--custom--colors--black);
 	bottom: auto;
 	right: -1.6rem;
 	top: 2rem;
@@ -2751,11 +2751,11 @@ h2.entry-title {
 }
 
 :root .has-primary-color {
-	color: #000;
+	color: var(--wp--custom--colors--black);
 }
 
 :root .has-primary-background-color {
-	background-color: #000;
+	background-color: var(--wp--custom--colors--black);
 	color: #f5efe0;
 }
 
@@ -2774,7 +2774,7 @@ h2.entry-title {
 
 :root .has-subtle-background-background-color {
 	background-color: #dcd7ca;
-	color: #000;
+	color: var(--wp--custom--colors--black);
 }
 
 :root .has-background-color {
@@ -2783,7 +2783,7 @@ h2.entry-title {
 
 :root .has-background-background-color {
 	background-color: #f5efe0;
-	color: #000;
+	color: var(--wp--custom--colors--black);
 }
 
 
