@@ -4,6 +4,14 @@
     "layout": {
       "contentSize": "610px",
       "wideSize": "1200px"
+    },
+    "custom" : {
+      "colors": {
+        "black": "#000000",
+        "red": "#cd2653",
+        "beige": "#dcd7ca",
+        "grey": "#6d6d6d",
+      }
     }
   }
 }
