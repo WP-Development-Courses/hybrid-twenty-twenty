@@ -481,48 +481,6 @@ add_filter( 'tiny_mce_before_init', 'twentytwenty_add_classic_editor_non_latin_s
  * Add custom colors and font sizes to the block editor.
  */
 function twentytwenty_block_editor_settings() {
-
-	// Block Editor Palette.
-	$editor_color_palette = array(
-		array(
-			'name'  => __( 'Accent Color', 'twentytwenty' ),
-			'slug'  => 'accent',
-			'color' => twentytwenty_get_color_for_area( 'content', 'accent' ),
-		),
-		array(
-			'name'  => _x( 'Primary', 'color', 'twentytwenty' ),
-			'slug'  => 'primary',
-			'color' => twentytwenty_get_color_for_area( 'content', 'text' ),
-		),
-		array(
-			'name'  => _x( 'Secondary', 'color', 'twentytwenty' ),
-			'slug'  => 'secondary',
-			'color' => twentytwenty_get_color_for_area( 'content', 'secondary' ),
-		),
-		array(
-			'name'  => __( 'Subtle Background', 'twentytwenty' ),
-			'slug'  => 'subtle-background',
-			'color' => twentytwenty_get_color_for_area( 'content', 'borders' ),
-		),
-	);
-
-	// Add the background option.
-	$background_color = get_theme_mod( 'background_color' );
-	if ( ! $background_color ) {
-		$background_color_arr = get_theme_support( 'custom-background' );
-		$background_color     = $background_color_arr[0]['default-color'];
-	}
-	$editor_color_palette[] = array(
-		'name'  => __( 'Background Color', 'twentytwenty' ),
-		'slug'  => 'background',
-		'color' => '#' . $background_color,
-	);
-
-	// If we have accent colors, add them to the block editor palette.
-	if ( $editor_color_palette ) {
-		add_theme_support( 'editor-color-palette', $editor_color_palette );
-	}
-
 	// Block Editor Font Sizes.
 	add_theme_support(
 		'editor-font-sizes',
