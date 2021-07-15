@@ -454,7 +454,7 @@ hr.styled-separator::after {
 }
 
 a {
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 	text-decoration: underline;
 }
 
@@ -537,7 +537,7 @@ dd + dt {
 /* Quotes ------------------------------------ */
 
 blockquote {
-	border-color: #cd2653;
+	border-color: var(--wp--custom--colors--red);
 	border-style: solid;
 
 	/*rtl:ignore*/
@@ -834,7 +834,7 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background: #cd2653;
+	background: var(--wp--custom--colors--red);
 	border: none;
 	border-radius: 0;
 	color: #fff;
@@ -1090,7 +1090,7 @@ button.toggle {
 .color-accent,
 .color-accent-hover:focus,
 .color-accent-hover:hover {
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 }
 
 /* BACKGROUND COLOR */
@@ -1098,7 +1098,7 @@ button.toggle {
 .bg-accent,
 .bg-accent-hover:focus,
 .bg-accent-hover:hover {
-	background-color: #cd2653;
+	background-color: var(--wp--custom--colors--red);
 }
 
 /* BORDER COLOR */
@@ -1106,14 +1106,14 @@ button.toggle {
 .border-color-accent,
 .border-color-accent-hover:focus,
 .border-color-accent-hover:hover {
-	border-color: #cd2653;
+	border-color: var(--wp--custom--colors--red);
 }
 
 /* FILL COLOR */
 
 .fill-children-accent,
 .fill-children-accent * {
-	fill: #cd2653;
+	fill: var(--wp--custom--colors--red);
 }
 
 .fill-children-current-color,
@@ -1303,7 +1303,7 @@ ul.social-icons li {
 
 .social-icons a {
 	align-items: center;
-	background: #cd2653;
+	background: var(--wp--custom--colors--red);
 	border-radius: 50%;
 	color: #fff;
 	display: flex;
@@ -2742,11 +2742,11 @@ h2.entry-title {
 /* CUSTOM COLORS */
 
 :root .has-accent-color {
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 }
 
 :root .has-accent-background-color {
-	background-color: #cd2653;
+	background-color: var(--wp--custom--colors--red);
 	color: #fff;
 }
 
@@ -2804,7 +2804,7 @@ h2.entry-title {
 }
 
 .has-drop-cap:not(:focus)::first-letter {
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 5.1em;
 	font-weight: 800;
@@ -3023,7 +3023,7 @@ h2.entry-title {
 }
 
 .wp-block-button.is-style-outline {
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 }
 
 .is-style-outline .wp-block-button__link:not(.has-text-color) {
@@ -3209,7 +3209,7 @@ figure.wp-block-gallery.alignfull {
 .wp-block-pullquote::before {
 	background: #fff;
 	border-radius: 50%;
-	color: #cd2653;
+	color: var(--wp--custom--colors--red);
 	content: "”";
 	display: block;
 	font-size: 6.2rem;
@@ -3833,7 +3833,7 @@ div.comment:first-of-type {
 }
 
 .comment-reply-link {
-	background-color: #cd2653;
+	background-color: var(--wp--custom--colors--red);
 	color: #fff;
 	display: block;
 	padding: 0.7rem;
@@ -4448,7 +4448,7 @@ ul.footer-social li {
 }
 
 .footer-social a {
-	background-color: #cd2653;
+	background-color: var(--wp--custom--colors--red);
 	height: 3.6rem;
 	width: 3.6rem;
 }
