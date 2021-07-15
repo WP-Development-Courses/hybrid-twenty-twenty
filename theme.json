@@ -10,8 +10,38 @@
         "black": "#000000",
         "red": "#cd2653",
         "beige": "#dcd7ca",
+        "light-beige": "#f5efe0",
         "grey": "#6d6d6d"
       }
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "accent",
+          "name": "Accent Color",
+          "color": "var(--wp--custom--colors--red)"
+        },
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "var(--wp--custom--colors--black)"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "var(--wp--custom--colors--grey)"
+        },
+        {
+          "slug": "subtle-background",
+          "name": "Subtle Background",
+          "color": "var(--wp--custom--colors--beige)"
+        },
+        {
+          "slug": "background",
+          "name": "Background Color",
+          "color": "var(--wp--custom--colors--light-beige)"
+        }
+      ]
     }
   }
 }
