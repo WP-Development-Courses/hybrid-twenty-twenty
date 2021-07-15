@@ -2739,54 +2739,6 @@ h2.entry-title {
 	color: inherit;
 }
 
-/* CUSTOM COLORS */
-
-:root .has-accent-color {
-	color: var(--wp--custom--colors--red);
-}
-
-:root .has-accent-background-color {
-	background-color: var(--wp--custom--colors--red);
-	color: #fff;
-}
-
-:root .has-primary-color {
-	color: var(--wp--custom--colors--black);
-}
-
-:root .has-primary-background-color {
-	background-color: var(--wp--custom--colors--black);
-	color: #f5efe0;
-}
-
-:root .has-secondary-color {
-	color: var(--wp--custom--colors--grey);
-}
-
-:root .has-secondary-background-color {
-	background-color: var(--wp--custom--colors--grey);
-	color: #fff;
-}
-
-:root .has-subtle-background-color {
-	color: var(--wp--custom--colors--beige);
-}
-
-:root .has-subtle-background-background-color {
-	background-color: var(--wp--custom--colors--beige);
-	color: var(--wp--custom--colors--black);
-}
-
-:root .has-background-color {
-	color: #f5efe0;
-}
-
-:root .has-background-background-color {
-	background-color: #f5efe0;
-	color: var(--wp--custom--colors--black);
-}
-
-
 /* Block Typography Classes ------------------ */
 
 .has-text-align-left {
