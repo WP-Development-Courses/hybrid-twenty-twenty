@@ -124,11 +124,8 @@ html {
 }
 
 body {
-	background: #f5efe0;
 	box-sizing: border-box;
-	color: var(--wp--custom--colors--black);
 	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 1.8rem;
 	letter-spacing: -0.015em;
 	text-align: left;
 }
