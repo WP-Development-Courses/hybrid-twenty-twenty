@@ -451,7 +451,6 @@ hr.styled-separator::after {
 }
 
 a {
-	color: var(--wp--custom--colors--red);
 	text-decoration: underline;
 }
 

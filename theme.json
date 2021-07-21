@@ -51,6 +51,13 @@
     },
     "typography": {
       "fontSize": "1.8rem"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var(--wp--custom--colors--red)"
+        }
+      }
     }
   }
 }
