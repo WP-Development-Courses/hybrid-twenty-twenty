@@ -93,11 +93,39 @@ tr,
 th,
 td {
 	border: none;
-	font-size: inherit;
 	line-height: inherit;
 	margin: 0;
 	padding: 0;
 	text-align: inherit;
+}
+
+p,
+blockquote,
+address,
+big,
+cite,
+code,
+em,
+font,
+img,
+small,
+strike,
+sub,
+sup,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+button,
+table,
+caption,
+tr,
+th,
+td {
+	font-size: inherit;
 }
 
 blockquote::before,
@@ -149,7 +177,6 @@ body {
 #site-content {
 	overflow: hidden;
 }
-
 
 /* Clearing ---------------------------------- */
 
@@ -286,6 +313,14 @@ Inter variable font. Usage:
 /*	2. Element Base
 /* ---------------------------------------------*---------------------------- */
 
+body {
+	--htt--heading-size-1: 3.6rem;
+	--htt--heading-size-2: 3.2rem;
+	--htt--heading-size-3: 2.8rem;
+	--htt--heading-size-4: 2.4rem;
+	--htt--heading-size-5: 2.1rem;
+	--htt--heading-size-6: 1.8rem;
+}
 
 main {
 	display: block;
@@ -308,36 +343,38 @@ h6,
 
 h1,
 .heading-size-1 {
-	font-size: 3.6rem;
 	font-weight: 800;
 	line-height: 1.138888889;
 }
 
-h2,
+.heading-size-1 {
+	font-size: var(--htt--heading-size-1);
+}
+
 .heading-size-2 {
-	font-size: 3.2rem;
+	font-size: var(--htt--heading-size-2);
 }
 
-h3,
 .heading-size-3 {
-	font-size: 2.8rem;
+	font-size: var(--htt--heading-size-3);
 }
 
-h4,
 .heading-size-4 {
-	font-size: 2.4rem;
+	font-size: var(--htt--heading-size-4);
 }
 
-h5,
 .heading-size-5 {
-	font-size: 2.1rem;
+	font-size: var(--htt--heading-size-5);
 }
 
 h6,
 .heading-size-6 {
-	font-size: 1.6rem;
 	letter-spacing: 0.03125em;
 	text-transform: uppercase;
+}
+
+.heading-size-6 {
+	font-size: var(--htt--heading-size-6);
 }
 
 p {
@@ -4682,6 +4719,15 @@ a.to-the-top > * {
 
 	/* Element Base ------------------------- */
 
+	body {
+		--htt--heading-size-1: 6.4rem;
+		--htt--heading-size-2: 4.8rem;
+		--htt--heading-size-3: 4rem;
+		--htt--heading-size-4: 3.2rem;
+		--htt--heading-size-5: 2.4rem;
+		--htt--heading-size-6: 1.8rem;
+	}
+
 	ul,
 	ol {
 		margin-bottom: 4rem;
@@ -4751,36 +4797,6 @@ a.to-the-top > * {
 	h6,
 	.heading-size-6 {
 		margin: 4.5rem auto 2.5rem;
-	}
-
-	h1,
-	.heading-size-1 {
-		font-size: 6.4rem;
-	}
-
-	h2,
-	.heading-size-2 {
-		font-size: 4.8rem;
-	}
-
-	h3,
-	.heading-size-3 {
-		font-size: 4rem;
-	}
-
-	h4,
-	.heading-size-4 {
-		font-size: 3.2rem;
-	}
-
-	h5,
-	.heading-size-5 {
-		font-size: 2.4rem;
-	}
-
-	h6,
-	.heading-size-6 {
-		font-size: 1.8rem;
 	}
 
 	/* INPUTS */
@@ -6064,11 +6080,8 @@ a.to-the-top > * {
 
 	/* Element Base -------------------------- */
 
-	/* TITLES */
-
-	h1,
-	.heading-size-1 {
-		font-size: 8.4rem;
+	body {
+		--htt--heading-size-1: 8.4rem;
 	}
 
 	/* Helper Classes ------------------------ */
