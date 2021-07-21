@@ -47,7 +47,7 @@
   "styles": {
     "color": {
       "background": "var(--wp--custom--colors--light-beige)",
-      "text": "var(--wp--custom--colors--light-black)"
+      "text": "var(--wp--custom--colors--black)"
     },
     "typography": {
       "fontSize": "1.8rem"
@@ -60,32 +60,32 @@
       },
       "h1": {
         "typography": {
-          "fontSize": "3.6rem"
+          "fontSize": "var(--htt--heading-size-1)"
         }
       },
       "h2": {
         "typography": {
-          "fontSize": "3.2rem"
+          "fontSize": "var(--htt--heading-size-2)"
         }
       },
       "h3": {
         "typography": {
-          "fontSize": "2.8rem"
+          "fontSize": "var(--htt--heading-size-3)"
         }
       },
       "h4": {
         "typography": {
-          "fontSize": "2.4rem"
+          "fontSize": "var(--htt--heading-size-4)"
         }
       },
       "h5": {
         "typography": {
-          "fontSize": "2.1rem"
+          "fontSize": "var(--htt--heading-size-5)"
         }
       },
       "h6": {
         "typography": {
-          "fontSize": "1.8rem"
+          "fontSize": "var(--htt--heading-size-6)"
         }
       }
     }
