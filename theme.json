@@ -42,6 +42,30 @@
           "color": "var(--wp--custom--colors--light-beige)"
         }
       ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.842em"
+        },
+        {
+          "slug": "normal",
+          "name": "Regular",
+          "size": "1em"
+        },
+        {
+          "slug": "large",
+          "name": "Large",
+          "size": "1.4em"
+        },
+        {
+          "slug": "larger",
+          "name": "Larger",
+          "size": "1.5em"
+        }
+      ]
     }
   },
   "styles": {
