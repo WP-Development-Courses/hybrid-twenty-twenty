@@ -57,6 +57,36 @@
         "color": {
           "text": "var(--wp--custom--colors--red)"
         }
+      },
+      "h1": {
+        "typography": {
+          "fontSize": "3.6rem"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "3.2rem"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "2.8rem"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontSize": "2.4rem"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontSize": "2.1rem"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontSize": "1.8rem"
+        }
       }
     }
   }
