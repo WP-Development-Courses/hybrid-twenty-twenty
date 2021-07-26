@@ -481,37 +481,6 @@ add_filter( 'tiny_mce_before_init', 'twentytwenty_add_classic_editor_non_latin_s
  * Add custom colors and font sizes to the block editor.
  */
 function twentytwenty_block_editor_settings() {
-	// Block Editor Font Sizes.
-	add_theme_support(
-		'editor-font-sizes',
-		array(
-			array(
-				'name'      => _x( 'Small', 'Name of the small font size in the block editor', 'twentytwenty' ),
-				'shortName' => _x( 'S', 'Short name of the small font size in the block editor.', 'twentytwenty' ),
-				'size'      => 18,
-				'slug'      => 'small',
-			),
-			array(
-				'name'      => _x( 'Regular', 'Name of the regular font size in the block editor', 'twentytwenty' ),
-				'shortName' => _x( 'M', 'Short name of the regular font size in the block editor.', 'twentytwenty' ),
-				'size'      => 21,
-				'slug'      => 'normal',
-			),
-			array(
-				'name'      => _x( 'Large', 'Name of the large font size in the block editor', 'twentytwenty' ),
-				'shortName' => _x( 'L', 'Short name of the large font size in the block editor.', 'twentytwenty' ),
-				'size'      => 26.25,
-				'slug'      => 'large',
-			),
-			array(
-				'name'      => _x( 'Larger', 'Name of the larger font size in the block editor', 'twentytwenty' ),
-				'shortName' => _x( 'XL', 'Short name of the larger font size in the block editor.', 'twentytwenty' ),
-				'size'      => 32,
-				'slug'      => 'larger',
-			),
-		)
-	);
-
 	add_theme_support( 'editor-styles' );
 
 	// If we have a dark background color then add support for dark editor style.
@@ -521,7 +490,6 @@ function twentytwenty_block_editor_settings() {
 	}
 
 }
-
 add_action( 'after_setup_theme', 'twentytwenty_block_editor_settings' );
 
 /**
