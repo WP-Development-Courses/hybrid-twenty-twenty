@@ -93,25 +93,7 @@
 .editor-styles-wrapper cite,
 .editor-styles-wrapper figcaption,
 .editor-styles-wrapper .wp-caption-text {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	.editor-post-title__block .editor-post-title__input,
-	.editor-styles-wrapper .wp-block h1,
-	.editor-styles-wrapper .wp-block h2,
-	.editor-styles-wrapper .wp-block h3,
-	.editor-styles-wrapper .wp-block h4,
-	.editor-styles-wrapper .wp-block h5,
-	.editor-styles-wrapper .wp-block h6,
-	.editor-styles-wrapper .has-drop-cap:not(:focus)::first-letter,
-	.editor-styles-wrapper cite,
-	.editor-styles-wrapper figcaption,
-	.editor-styles-wrapper .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
-
+	font-family: var(--htt--font-family-sans-serif);
 }
 
 /* Typography -------------------------------- */

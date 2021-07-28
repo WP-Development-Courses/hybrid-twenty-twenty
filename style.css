@@ -714,22 +714,8 @@ button,
 .faux-button,
 .wp-block-button__link,
 .wp-block-file__button {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: var(--htt--font-family-sans-serif);
 	line-height: 1;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	input,
-	textarea,
-	button,
-	.button,
-	.faux-button,
-	.faux-button.more-link,
-	.wp-block-button__link,
-	.wp-block-file__button {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
 }
 
 input,
@@ -2740,7 +2726,7 @@ h2.entry-title {
 
 .has-drop-cap:not(:focus)::first-letter {
 	color: var(--wp--custom--colors--red);
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: var(--htt--font-family-sans-serif);
 	font-size: 5.1em;
 	font-weight: 800;
 	margin: 0.05em 0.1em 0 0;
@@ -2768,20 +2754,7 @@ h2.entry-title {
 .entry-content .wp-block-pullquote,
 .entry-content .wp-block-quote.is-large,
 .entry-content .wp-block-quote.is-style-large {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	.has-drop-cap:not(:focus)::first-letter,
-	.entry-content .wp-block-archives,
-	.entry-content .wp-block-categories,
-	.entry-content .wp-block-latest-posts,
-	.entry-content .wp-block-latest-comments,
-	.entry-content .wp-block-cover-image p,
-	.entry-content .wp-block-pullquote {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
+	font-family: var(--htt--font-family-sans-serif);
 }
 
 /* Block: Base Margins ----------------------- */
@@ -3461,27 +3434,8 @@ figure.wp-block-table.is-style-stripes {
 .entry-content address,
 .entry-content .wp-caption-text,
 .entry-content .wp-block-file {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-family: var(--htt--font-family-sans-serif);
 }
-
-@supports ( font-variation-settings: normal ) {
-
-	.entry-content h1,
-	.entry-content h2,
-	.entry-content h3,
-	.entry-content h4,
-	.entry-content h5,
-	.entry-content h6,
-	.entry-content cite,
-	.entry-content figcaption,
-	.entry-content table,
-	.entry-content address,
-	.entry-content .wp-caption-text,
-	.entry-content .wp-block-file {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
-}
-
 
 /* Alignment Classes ------------------------- */
 
@@ -4059,16 +4013,7 @@ div.comment:first-of-type {
 .widget-content cite,
 .widget-content figcaption,
 .widget-content .wp-caption-text {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	.widget-content cite,
-	.widget-content figcaption,
-	.widget-content .wp-caption-text {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
+	font-family: var(--htt--font-family-sans-serif);
 }
 
 /* Base List Widget -------------------------- */
