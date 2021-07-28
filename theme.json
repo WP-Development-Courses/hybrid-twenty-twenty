@@ -112,6 +112,21 @@
           "fontSize": "var(--htt--heading-size-6)"
         }
       }
+    },
+    "blocks": {
+      "core/site-title": {
+        "typography": {
+          "fontSize": "var(--htt--site-title-font-size)",
+          "lineHeight": "1"
+        },
+        "elements": {
+          "link": {
+            "color": {
+              "text": "var(--wp--custom--colors--black)"
+            }
+          }
+        }
+      }
     }
   }
 }
