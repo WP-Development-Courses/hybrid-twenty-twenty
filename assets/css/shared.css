@@ -1,0 +1,32 @@
+/**
+ * Shared styles between the frontend and the backend.
+ */
+
+body {
+	--htt--site-title-font-size: 21px;
+}
+
+.wp-block-site-title {
+	font-weight: 600;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.wp-block-site-title a {
+	text-decoration: none;
+}
+
+.wp-block-site-title a:hover,
+.wp-block-site-title a:focus {
+	text-decoration: underline;
+}
+
+@media ( min-width: 700px ) {
+	body {
+		--htt--site-title-font-size: 24px;
+	}
+
+	.wp-block-site-title {
+		font-weight: 700;
+	}
+}

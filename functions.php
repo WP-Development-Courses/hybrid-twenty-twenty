@@ -191,6 +191,13 @@ function twentytwenty_register_styles() {
 	wp_enqueue_style( 'twentytwenty-style', get_stylesheet_uri(), array(), $theme_version );
 	wp_style_add_data( 'twentytwenty-style', 'rtl', 'replace' );
 
+	wp_enqueue_style(
+		'hybrid-twentytwenty-shared-style',
+		get_template_directory_uri() . '/assets/css/shared.css',
+		array( 'twentytwenty-style' ),
+		$theme_version
+	);
+
 	// Add output of Customizer settings as inline style.
 	wp_add_inline_style( 'twentytwenty-style', twentytwenty_get_customizer_css( 'front-end' ) );
 
@@ -417,6 +424,7 @@ function twentytwenty_classic_editor_styles() {
 
 	$classic_editor_styles = array(
 		'/assets/css/editor-style-classic.css',
+		'/assets/css/shared.css'
 	);
 
 	add_editor_style( $classic_editor_styles );

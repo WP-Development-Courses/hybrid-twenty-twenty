@@ -186,8 +186,7 @@ Inter variable font. Usage:
 	margin-bottom: 25px;
 }
 
-.editor-post-title__block .editor-post-title__input,
-.editor-styles-wrapper .wp-block h1 {
+.editor-post-title__block .editor-post-title__input {
 	font-size: 36px;
 	font-weight: 800;
 	line-height: 1.138888889;
@@ -1114,8 +1113,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 	/* TYPOGRAPHY */
 
-	.editor-post-title__block .editor-post-title__input,
-	.editor-styles-wrapper .wp-block h1 {
+	.editor-post-title__block .editor-post-title__input {
 		font-size: 64px;
 	}
 
@@ -1292,8 +1290,7 @@ hr.wp-block-separator.is-style-dots::before {
 
 	/* TYPOGRAPHY */
 
-	.editor-post-title__block .editor-post-title__input,
-	.editor-styles-wrapper .wp-block h1 {
+	.editor-post-title__block .editor-post-title__input {
 		font-size: 84px;
 	}
 
