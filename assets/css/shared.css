@@ -84,6 +84,10 @@ body {
 	margin: 10px 0 10px 0;
 }
 
+.wp-block-post-title {
+	margin: 80px 0 80px;
+}
+
 @media ( min-width: 700px ) {
 	body {
 		--htt--site-title-font-size: 24px;
