@@ -12,7 +12,6 @@
 .editor-styles-wrapper {
 	background: #f5efe0;
 	color: #000;
-	letter-spacing: -0.015em;
 	-moz-font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 
@@ -22,19 +21,6 @@
 	--htt--heading-size-4: 2.4rem;
 	--htt--heading-size-5: 2.1rem;
 	--htt--heading-size-6: 1.8rem;
-}
-
-.editor-styles-wrapper > * {
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 18px;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	.editor-styles-wrapper > * {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
-
 }
 
 .block-editor-default-block-appender textarea.block-editor-default-block-appender__content {

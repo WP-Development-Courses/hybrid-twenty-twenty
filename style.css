@@ -153,16 +153,6 @@ html {
 
 body {
 	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	letter-spacing: -0.015em;
-	text-align: left;
-}
-
-@supports ( font-variation-settings: normal ) {
-
-	body {
-		font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
 }
 
 *,

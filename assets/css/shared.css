@@ -45,8 +45,22 @@ Inter variable font. Usage:
 	src: url(../fonts/inter/Inter-italic-var.woff2) format("woff2");
 }
 
+/* Variables ------------------------------------- */
+
 body {
+	--htt--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	--htt--site-title-font-size: 21px;
+}
+
+@supports ( font-variation-settings: normal ) {
+	body {
+		--htt--font-family-sans-serif: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+body {
+	font-family: var(--htt--font-family-sans-serif);
+	letter-spacing: -0.015em;
 }
 
 .wp-block-site-title {
