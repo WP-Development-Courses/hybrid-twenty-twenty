@@ -114,6 +114,19 @@
       }
     },
     "blocks": {
+      "core/post-title": {
+        "typography": {
+          "fontSize": "var(--htt--heading-size-1)"
+        }
+      },
+      "core/site-tagline": {
+        "color": {
+          "text": "var(--wp--custom--colors--grey)"
+        },
+        "typography": {
+          "fontSize": "18px"
+        }
+      },
       "core/site-title": {
         "typography": {
           "fontSize": "var(--htt--site-title-font-size)",
