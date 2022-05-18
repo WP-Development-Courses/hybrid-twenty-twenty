@@ -30,6 +30,8 @@
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_theme_support() {
 
@@ -183,6 +185,8 @@ require get_template_directory() . '/inc/block-patterns.php';
 
 /**
  * Register and Enqueue Styles.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_register_styles() {
 
@@ -190,13 +194,6 @@ function twentytwenty_register_styles() {
 
 	wp_enqueue_style( 'twentytwenty-style', get_stylesheet_uri(), array(), $theme_version );
 	wp_style_add_data( 'twentytwenty-style', 'rtl', 'replace' );
-
-	wp_enqueue_style(
-		'hybrid-twentytwenty-shared-style',
-		get_template_directory_uri() . '/assets/css/shared.css',
-		array( 'twentytwenty-style' ),
-		$theme_version
-	);
 
 	// Add output of Customizer settings as inline style.
 	wp_add_inline_style( 'twentytwenty-style', twentytwenty_get_customizer_css( 'front-end' ) );
@@ -210,6 +207,8 @@ add_action( 'wp_enqueue_scripts', 'twentytwenty_register_styles' );
 
 /**
  * Register and Enqueue Scripts.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_register_scripts() {
 
@@ -232,6 +231,8 @@ add_action( 'wp_enqueue_scripts', 'twentytwenty_register_scripts' );
  * This does not enqueue the script because it is tiny and because it is only for IE11,
  * thus it does not warrant having an entire dedicated blocking script being loaded.
  *
+ * @since Twenty Twenty 1.0
+ *
  * @link https://git.io/vWdr2
  */
 function twentytwenty_skip_link_focus_fix() {
@@ -244,7 +245,8 @@ function twentytwenty_skip_link_focus_fix() {
 }
 add_action( 'wp_print_footer_scripts', 'twentytwenty_skip_link_focus_fix' );
 
-/** Enqueue non-latin language styles
+/**
+ * Enqueue non-latin language styles.
  *
  * @since Twenty Twenty 1.0
  *
@@ -262,6 +264,8 @@ add_action( 'wp_enqueue_scripts', 'twentytwenty_non_latin_languages' );
 
 /**
  * Register navigation menus uses wp_nav_menu in five places.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_menus() {
 
@@ -280,6 +284,8 @@ add_action( 'init', 'twentytwenty_menus' );
 
 /**
  * Get the information about the logo.
+ *
+ * @since Twenty Twenty 1.0
  *
  * @param string $html The HTML output from get_custom_logo (core function).
  * @return string
@@ -338,14 +344,19 @@ if ( ! function_exists( 'wp_body_open' ) ) {
 
 	/**
 	 * Shim for wp_body_open, ensuring backward compatibility with versions of WordPress older than 5.2.
+	 *
+	 * @since Twenty Twenty 1.0
 	 */
 	function wp_body_open() {
+		/** This action is documented in wp-includes/general-template.php */
 		do_action( 'wp_body_open' );
 	}
 }
 
 /**
  * Include a skip to content link at the top of the page so that users can bypass the menu.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_skip_link() {
 	echo '<a class="skip-link screen-reader-text" href="#site-content">' . __( 'Skip to the content', 'twentytwenty' ) . '</a>';
@@ -355,6 +366,8 @@ add_action( 'wp_body_open', 'twentytwenty_skip_link', 5 );
 
 /**
  * Register widget areas.
+ *
+ * @since Twenty Twenty 1.0
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
@@ -398,6 +411,8 @@ add_action( 'widgets_init', 'twentytwenty_sidebar_registration' );
 
 /**
  * Enqueue supplemental block editor styles.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_block_editor_styles() {
 
@@ -419,12 +434,13 @@ add_action( 'enqueue_block_editor_assets', 'twentytwenty_block_editor_styles', 1
 
 /**
  * Enqueue classic editor styles.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_classic_editor_styles() {
 
 	$classic_editor_styles = array(
 		'/assets/css/editor-style-classic.css',
-		'/assets/css/shared.css'
 	);
 
 	add_editor_style( $classic_editor_styles );
@@ -436,6 +452,8 @@ add_action( 'init', 'twentytwenty_classic_editor_styles' );
 /**
  * Output Customizer settings in the classic editor.
  * Adds styles to the head of the TinyMCE iframe. Kudos to @Otto42 for the original solution.
+ *
+ * @since Twenty Twenty 1.0
  *
  * @param array $mce_init TinyMCE styles.
  * @return array TinyMCE styles.
@@ -487,8 +505,83 @@ add_filter( 'tiny_mce_before_init', 'twentytwenty_add_classic_editor_non_latin_s
 /**
  * Block Editor Settings.
  * Add custom colors and font sizes to the block editor.
+ *
+ * @since Twenty Twenty 1.0
  */
 function twentytwenty_block_editor_settings() {
+
+	// Block Editor Palette.
+	$editor_color_palette = array(
+		array(
+			'name'  => __( 'Accent Color', 'twentytwenty' ),
+			'slug'  => 'accent',
+			'color' => twentytwenty_get_color_for_area( 'content', 'accent' ),
+		),
+		array(
+			'name'  => _x( 'Primary', 'color', 'twentytwenty' ),
+			'slug'  => 'primary',
+			'color' => twentytwenty_get_color_for_area( 'content', 'text' ),
+		),
+		array(
+			'name'  => _x( 'Secondary', 'color', 'twentytwenty' ),
+			'slug'  => 'secondary',
+			'color' => twentytwenty_get_color_for_area( 'content', 'secondary' ),
+		),
+		array(
+			'name'  => __( 'Subtle Background', 'twentytwenty' ),
+			'slug'  => 'subtle-background',
+			'color' => twentytwenty_get_color_for_area( 'content', 'borders' ),
+		),
+	);
+
+	// Add the background option.
+	$background_color = get_theme_mod( 'background_color' );
+	if ( ! $background_color ) {
+		$background_color_arr = get_theme_support( 'custom-background' );
+		$background_color     = $background_color_arr[0]['default-color'];
+	}
+	$editor_color_palette[] = array(
+		'name'  => __( 'Background Color', 'twentytwenty' ),
+		'slug'  => 'background',
+		'color' => '#' . $background_color,
+	);
+
+	// If we have accent colors, add them to the block editor palette.
+	if ( $editor_color_palette ) {
+		add_theme_support( 'editor-color-palette', $editor_color_palette );
+	}
+
+	// Block Editor Font Sizes.
+	add_theme_support(
+		'editor-font-sizes',
+		array(
+			array(
+				'name'      => _x( 'Small', 'Name of the small font size in the block editor', 'twentytwenty' ),
+				'shortName' => _x( 'S', 'Short name of the small font size in the block editor.', 'twentytwenty' ),
+				'size'      => 18,
+				'slug'      => 'small',
+			),
+			array(
+				'name'      => _x( 'Regular', 'Name of the regular font size in the block editor', 'twentytwenty' ),
+				'shortName' => _x( 'M', 'Short name of the regular font size in the block editor.', 'twentytwenty' ),
+				'size'      => 21,
+				'slug'      => 'normal',
+			),
+			array(
+				'name'      => _x( 'Large', 'Name of the large font size in the block editor', 'twentytwenty' ),
+				'shortName' => _x( 'L', 'Short name of the large font size in the block editor.', 'twentytwenty' ),
+				'size'      => 26.25,
+				'slug'      => 'large',
+			),
+			array(
+				'name'      => _x( 'Larger', 'Name of the larger font size in the block editor', 'twentytwenty' ),
+				'shortName' => _x( 'XL', 'Short name of the larger font size in the block editor.', 'twentytwenty' ),
+				'size'      => 32,
+				'slug'      => 'larger',
+			),
+		)
+	);
+
 	add_theme_support( 'editor-styles' );
 
 	// If we have a dark background color then add support for dark editor style.
@@ -498,6 +591,7 @@ function twentytwenty_block_editor_settings() {
 	}
 
 }
+
 add_action( 'after_setup_theme', 'twentytwenty_block_editor_settings' );
 
 /**
@@ -566,7 +660,7 @@ add_action( 'customize_preview_init', 'twentytwenty_customize_preview_init' );
  *
  * @since Twenty Twenty 1.0
  *
- * @param string $area The area we want to get the colors for.
+ * @param string $area    The area we want to get the colors for.
  * @param string $context Can be 'text' or 'accent'.
  * @return string Returns a HEX color.
  */
@@ -633,7 +727,7 @@ function twentytwenty_get_elements_array() {
 	$elements = array(
 		'content'       => array(
 			'accent'     => array(
-				'color'            => array( '.color-accent', '.color-accent-hover:hover', '.color-accent-hover:focus', ':root .has-accent-color', '.has-drop-cap:not(:focus):first-letter', '.wp-block-button.is-style-outline' ),
+				'color'            => array( '.color-accent', '.color-accent-hover:hover', '.color-accent-hover:focus', ':root .has-accent-color', '.has-drop-cap:not(:focus):first-letter', '.wp-block-button.is-style-outline', 'a' ),
 				'border-color'     => array( 'blockquote', '.border-color-accent', '.border-color-accent-hover:hover', '.border-color-accent-hover:focus' ),
 				'background-color' => array( 'button', '.button', '.faux-button', '.wp-block-button__link', '.wp-block-file .wp-block-file__button', 'input[type="button"]', 'input[type="reset"]', 'input[type="submit"]', '.bg-accent', '.bg-accent-hover:hover', '.bg-accent-hover:focus', ':root .has-accent-background-color', '.comment-reply-link' ),
 				'fill'             => array( '.fill-children-accent', '.fill-children-accent *' ),
@@ -643,7 +737,7 @@ function twentytwenty_get_elements_array() {
 				'background-color' => array( ':root .has-background-background-color' ),
 			),
 			'text'       => array(
-				'color'            => array( '.entry-title a', ':root .has-primary-color' ),
+				'color'            => array( 'body', '.entry-title a', ':root .has-primary-color' ),
 				'background-color' => array( ':root .has-primary-background-color' ),
 			),
 			'secondary'  => array(
@@ -684,20 +778,11 @@ function twentytwenty_get_elements_array() {
 	);
 
 	/**
-	* Filters Twenty Twenty theme elements
-	*
-	* @since Twenty Twenty 1.0
-	*
-	* @param array Array of elements
-	*/
+	 * Filters Twenty Twenty theme elements.
+	 *
+	 * @since Twenty Twenty 1.0
+	 *
+	 * @param array Array of elements.
+	 */
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
-
-function hybrid_twentytwenty_set_template_editor_default( $settings ) {
-	$settings['defaultBlockTemplate'] = file_get_contents(
-		get_theme_file_path( 'templates/default.html' )
-	);
-
-	return $settings;
-}
-add_filter( 'block_editor_settings_all', 'hybrid_twentytwenty_set_template_editor_default' );

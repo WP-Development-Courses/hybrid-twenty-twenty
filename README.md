@@ -1,5 +1,5 @@
 # Hybrid Twenty Twenty
 
-A fork of the default Twenty Twenty theme, adapted for the full-site editing features in WordPress 5.8.
+A showcase for how to add a `theme.json` file to a Classic Theme.
 
-If you want to learn how to adapt your themes for full-site editing, check out my [Building Hybrid Themes](https://wpdevelopment.courses/courses/building-hybrid-themes/) course.
+Checkout the [free Theme.json Explained course](https://wpdevelopment.courses/lp/theme-json-explained/)  to learn how to use the `theme.json` file in your themes. 
