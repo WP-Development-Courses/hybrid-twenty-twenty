@@ -2,9 +2,7 @@
 Theme Name: Hybrid Twenty Twenty
 Text Domain: twentytwenty
 Version: 1.0
-Requires at least: 4.7
-Requires PHP: 5.2.4
-Description: A fork of the default theme for 2020 to showcase the use of the new full-site editing features in WordPress 5.8.
+Description: A showcase for how to add a `theme.json` file to a Classic Theme.
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks, accessibility-ready
 Author: WP Development Courses
 Author URI: https://wpdevelopment.courses/
