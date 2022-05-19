@@ -49,6 +49,21 @@
                     "slug": "small",
                     "name": "Small",
                     "size": "18px"
+                },
+                {
+                    "slug": "normal",
+                    "name": "Regular",
+                    "size": "21px"
+                },
+                {
+                    "slug": "large",
+                    "name": "Large",
+                    "size": "26.25px"
+                },
+                {
+                    "slug": "larger",
+                    "name": "Larger",
+                    "size": "32px"
                 }
             ]
         }
