@@ -4,11 +4,31 @@
         "color": {
             "palette": [
                 {
-                    "name": "Accent Color",
                     "slug": "accent",
+                    "name": "Accent Color",
                     "color": "var(--wp--custom--colors--red)"
+                },
+                {
+                    "slug": "primary",
+                    "name": "Primary",
+                    "color": "var(--wp--custom--colors--black)"
+                },
+                {
+                    "slug": "secondary",
+                    "name": "Secondary",
+                    "color": "var(--wp--custom--colors--grey)"
+                },
+                {
+                    "slug": "subtle-background",
+                    "name": "Subtle Background",
+                    "color": "var(--wp--custom--colors--beige)"
+                },
+                {
+                    "slug": "background",
+                    "name": "Background Color",
+                    "color": "var(--wp--custom--colors--light-beige)"
                 }
-            ]
+                ]
         },
         "custom": {
             "colors": {
