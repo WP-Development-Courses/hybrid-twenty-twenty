@@ -67,5 +67,14 @@
                 }
             ]
         }
+    },
+    "styles": {
+        "color": {
+            "background": "var(--wp--custom--colors--light-beige)",
+            "text": "var(--wp--custom--colors--black)"
+        },
+        "typography": {
+            "fontSize": "1.8rem"
+        }
     }
 }
