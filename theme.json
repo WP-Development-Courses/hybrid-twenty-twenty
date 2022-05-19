@@ -1,9 +1,22 @@
 {
     "version": 2,
     "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Accent Color",
+                    "slug": "accent",
+                    "color": "var(--wp--custom--colors--red)"
+                }
+            ]
+        },
         "custom": {
             "colors": {
-                "black": "#000"
+                "black": "#000",
+                "red": "#cd2653",
+                "beige": "#dcd7ca",
+                "light-beige": "#f5efe0",
+                "grey": "#6d6d6d"
             }
         },
         "layout": {
