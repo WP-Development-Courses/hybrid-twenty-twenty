@@ -42,6 +42,15 @@
         "layout": {
             "contentSize": "610px",
             "wideSize": "1200px"
+        },
+        "typography": {
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "name": "Small",
+                    "size": "18px"
+                }
+            ]
         }
     }
 }
