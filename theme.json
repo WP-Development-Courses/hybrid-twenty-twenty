@@ -28,7 +28,7 @@
                     "name": "Background Color",
                     "color": "var(--wp--custom--colors--light-beige)"
                 }
-                ]
+            ]
         },
         "custom": {
             "colors": {
