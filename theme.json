@@ -75,6 +75,23 @@
         },
         "typography": {
             "fontSize": "1.8rem"
+        },
+        "elements": {
+            "h1": {
+                "typography": {
+                    "fontSize": "3.6rem"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "3.2rem"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--custom--colors--red)"
+                }
+            }
         }
     }
 }
