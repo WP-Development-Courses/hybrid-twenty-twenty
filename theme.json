@@ -1,6 +1,11 @@
 {
     "version": 2,
     "settings": {
+        "custom": {
+            "colors": {
+                "black": "#000"
+            }
+        },
         "layout": {
             "contentSize": "610px",
             "wideSize": "1200px"
