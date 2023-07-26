@@ -24,6 +24,8 @@
  * Block Editor Settings
  */
 
+require_once __DIR__ . '/inc/blocks/classic-header/classic-header.php';
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
