@@ -30,7 +30,9 @@ get_header();
 
 </main><!-- #site-content -->
 
-<?php get_template_part( 'template-parts/footer-menus-widgets' ); ?>
+<div class="block-footer">
+	<?php block_template_part( 'footer' ); ?>
+</div>
 
 <?php
 get_footer();

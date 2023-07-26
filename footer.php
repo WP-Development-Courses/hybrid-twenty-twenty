@@ -12,6 +12,7 @@
  */
 
 ?>
+
 			<footer id="site-footer" class="header-footer-group">
 
 				<div class="section-inner">

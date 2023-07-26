@@ -67,7 +67,7 @@ Inter variable font. Usage:
 }
 
 /* Structure --------------------------------- */
-
+/*
 .wp-block {
 	max-width: 610px;
 }
@@ -77,13 +77,15 @@ Inter variable font. Usage:
 	max-width: 1200px;
 }
 
+
+
 .wp-block .wp-block[data-type="core/group"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]),
 .wp-block .wp-block[data-type="core/cover"]:not([data-align="full"]):not([data-align="wide"]):not([data-align="left"]):not([data-align="right"]) {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 610px;
 }
-
+ */
 .wp-block .wp-block[data-align="full"] {
 	margin-left: 0;
 	margin-right: 0;
