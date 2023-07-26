@@ -125,6 +125,8 @@ function twentytwenty_theme_support() {
 	// Add support for responsive embeds.
 	add_theme_support( 'responsive-embeds' );
 
+	add_theme_support( 'block-template-parts' );
+
 	/*
 	 * Adds starter content to highlight the theme on fresh sites.
 	 * This is done conditionally to avoid loading the starter content on every

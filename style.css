@@ -6491,3 +6491,7 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+
+.block-footer p {
+	font-family: NonBreakingSpaceOverride, "Hoefler Text", "Noto Serif", Garamond, "Times New Roman", serif;
+}
