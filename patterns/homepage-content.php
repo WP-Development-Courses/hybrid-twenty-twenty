@@ -1,0 +1,149 @@
+<?php
+/**
+ * Title: Homepage Content
+ * Slug: hybridtwentytwenty/homepage-content
+ * Inserter: false
+ */
+?>
+
+<!-- wp:group {"align":"full","style":{"color":{"gradient":"linear-gradient(180deg,rgb(254,254,254) 46%,rgb(245,239,224) 46%)"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="background:linear-gradient(180deg,rgb(254,254,254) 46%,rgb(245,239,224) 46%)"><!-- wp:post-featured-image {"align":"wide"} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","style":{"spacing":{"padding":{"top":"6rem","bottom":"6rem"}}}} -->
+	<h2 class="wp-block-heading has-text-align-center" style="padding-top:6rem;padding-bottom:6rem">The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months.</h2>
+	<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+	<div class="wp-block-column"><!-- wp:image {"id":37} -->
+		<figure class="wp-block-image"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-three-quarters-1.png" alt="" class="wp-image-37"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading">Works and Days</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>August 1 — December 1</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">REad more</a></div>
+			<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+	<!-- /wp:column -->
+
+	<!-- wp:column -->
+	<div class="wp-block-column"><!-- wp:image {"id":37} -->
+		<figure class="wp-block-image"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-three-quarters-3.png" alt="" class="wp-image-37"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading">Theatre of Operations</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>October 1 — December 1</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">REad more</a></div>
+			<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+	<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+	<div class="wp-block-column"><!-- wp:image {"id":37} -->
+		<figure class="wp-block-image"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-three-quarters-2.png" alt="" class="wp-image-37"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading">The Life I Deserve</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>August 1 — December 1</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">REad more</a></div>
+			<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+	<!-- /wp:column -->
+
+	<!-- wp:column -->
+	<div class="wp-block-column"><!-- wp:image {"id":37} -->
+		<figure class="wp-block-image"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-three-quarters-4.png" alt="" class="wp-image-37"/></figure>
+		<!-- /wp:image -->
+
+		<!-- wp:heading {"level":3} -->
+		<h3 class="wp-block-heading">From Signac to Matisse</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph -->
+		<p>October 1 — December 1</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline"} -->
+			<div class="wp-block-button is-style-outline"><a class="wp-block-button__link wp-element-button">REad more</a></div>
+			<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+	<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:image {"align":"full","id":37} -->
+<figure class="wp-block-image alignfull"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-landscape-2.png" alt="" class="wp-image-37"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"textAlign":"center","textColor":"accent"} -->
+<h2 class="wp-block-heading has-text-align-center has-accent-color has-text-color">“Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.”</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"4rem","bottom":"4rem","left":"4rem","right":"4rem"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:4rem;padding-right:4rem;padding-bottom:4rem;padding-left:4rem"><!-- wp:group {"layout":{"type":"constrained"}} -->
+	<div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
+		<h2 class="wp-block-heading has-text-align-center">Become a Member and Get Exclusive Offers!</h2>
+		<!-- /wp:heading -->
+
+		<!-- wp:paragraph {"align":"center"} -->
+		<p class="has-text-align-center">Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually.</p>
+		<!-- /wp:paragraph -->
+
+		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+		<div class="wp-block-buttons"><!-- wp:button {"textAlign":"center","className":"is-style-fill"} -->
+			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-text-align-center wp-element-button">Join the club</a></div>
+			<!-- /wp:button --></div>
+		<!-- /wp:buttons --></div>
+	<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center"} -->
+	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"large"} -->
+		<figure class="wp-block-image size-large"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-square-2.png" alt=""/></figure>
+		<!-- /wp:image --></div>
+	<!-- /wp:column -->
+
+	<!-- wp:column {"verticalAlignment":"center"} -->
+	<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"sizeSlug":"large"} -->
+		<figure class="wp-block-image size-large"><img src="https://wp-themes.com/wp-content/themes/twentytwenty/assets/images/2020-square-1.png" alt=""/></figure>
+		<!-- /wp:image --></div>
+	<!-- /wp:column --></div>
+<!-- /wp:columns -->
